@@ -1,0 +1,15 @@
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\c sharp pong.exe
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\c sharp pong.deps.json
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\c sharp pong.runtimeconfig.json
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\c sharp pong.runtimeconfig.dev.json
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\c sharp pong.dll
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\c sharp pong.pdb
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c sharp pong.csproj.AssemblyReference.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c_sharp_pong.Form1.resources
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c sharp pong.csproj.GenerateResource.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c sharp pong.AssemblyInfoInputs.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c sharp pong.AssemblyInfo.cs
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c sharp pong.csproj.CoreCompileInputs.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c sharp pong.dll
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c sharp pong.pdb
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c sharp pong.genruntimeconfig.cache

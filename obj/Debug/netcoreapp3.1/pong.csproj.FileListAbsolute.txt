@@ -1,0 +1,16 @@
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\pong.exe
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\pong.deps.json
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\pong.runtimeconfig.json
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\pong.runtimeconfig.dev.json
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\pong.dll
+C:\Users\aricb\source\repos\c sharp pong\bin\Debug\netcoreapp3.1\pong.pdb
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.csproj.AssemblyReference.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\c_sharp_pong.Form1.resources
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.csproj.GenerateResource.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.AssemblyInfoInputs.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.AssemblyInfo.cs
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.csproj.CoreCompileInputs.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.dll
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.pdb
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.genruntimeconfig.cache
+C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.Canvas.resources
