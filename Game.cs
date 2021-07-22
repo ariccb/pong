@@ -11,7 +11,7 @@ namespace pong
     class Game
     {
         public Canvas window;
-        private Thread gameloopthread;
+        private Thread gameLoopThread;
         public float x;
         public float y;
         public float v;
@@ -23,8 +23,8 @@ namespace pong
             x = 10;
             y = 10;
             v = 2;
-            gameloopthread = new Thread(Game_loop);
-            gameloopthread.Start();
+            gameLoopThread = new Thread(GameLoop);
+            gameLoopThread.Start();
         }
 
         private void Canvas_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -42,9 +42,9 @@ namespace pong
                 v = 2;
             }
         }
-        public void Game_loop()
+        public void GameLoop()
         {
-            while (gameloopthread.IsAlive)
+            while (gameLoopThread.IsAlive)
             {
                 window.BeginInvoke((MethodInvoker)delegate { window.Refresh(); });
                 Thread.Sleep(1);
