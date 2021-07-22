@@ -14,3 +14,19 @@ C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.dll
 C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.pdb
 C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.genruntimeconfig.cache
 C:\Users\aricb\source\repos\c sharp pong\obj\Debug\netcoreapp3.1\pong.Canvas.resources
+D:\Code\Lessons\pong\bin\Debug\netcoreapp3.1\pong.exe
+D:\Code\Lessons\pong\bin\Debug\netcoreapp3.1\pong.deps.json
+D:\Code\Lessons\pong\bin\Debug\netcoreapp3.1\pong.runtimeconfig.json
+D:\Code\Lessons\pong\bin\Debug\netcoreapp3.1\pong.runtimeconfig.dev.json
+D:\Code\Lessons\pong\bin\Debug\netcoreapp3.1\pong.dll
+D:\Code\Lessons\pong\bin\Debug\netcoreapp3.1\pong.pdb
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.csproj.AssemblyReference.cache
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.Canvas.resources
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\c_sharp_pong.Form1.resources
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.csproj.GenerateResource.cache
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.AssemblyInfoInputs.cache
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.AssemblyInfo.cs
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.csproj.CoreCompileInputs.cache
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.dll
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.pdb
+D:\Code\Lessons\pong\obj\Debug\netcoreapp3.1\pong.genruntimeconfig.cache
