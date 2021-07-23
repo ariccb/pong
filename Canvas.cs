@@ -26,7 +26,7 @@ namespace pong
             // 
             // Canvas
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(1000, 1000);
             this.Name = "Canvas";
             this.Load += new System.EventHandler(this.Canvas_Load);
             this.ResumeLayout(false);
@@ -38,6 +38,9 @@ namespace pong
 
         }
         //we need to clear the screen, because we want a different background
-
+        ~Canvas()
+        {
+            game.canvasClosed = true;
+        }
     }
 }
