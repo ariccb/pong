@@ -14,25 +14,23 @@ namespace pong
     {
         public Canvas window;
         private Thread gameLoopThread;
-        public float x;
-        public float y;
-        public float vx;
-        public float vy;
         public bool canvasClosed = false;
         private Ball ball;
-        private LeftPaddle paddle;
-        
+        private LeftPaddle leftPaddle;
+        private RightPaddle rightPaddle;
+        public float courseWidth;
+        public float courseHeight;
+
 
         public Game(Canvas canvas)
         {
+            courseWidth = 700;
+            courseHeight = 700;
             window = canvas;
             canvas.Paint += Canvas_Paint; // this is listening for when the window is painted
-            x = 10;
-            y = 10;
-            vx = 2;
-            vy = 0;
-            ball = new Ball();
-            paddle = new LeftPaddle();
+            ball = new Ball(courseWidth, courseHeight);
+            leftPaddle = new LeftPaddle(courseWidth, courseHeight);
+            rightPaddle = new RightPaddle(courseWidth, courseHeight);
             gameLoopThread = new Thread(GameLoop);
             gameLoopThread.IsBackground = true; //attempt to solve thread running after window closes
             gameLoopThread.Start();
@@ -44,11 +42,19 @@ namespace pong
         {
             if(e.KeyCode == Keys.Up)
             {
-                vy = 0;
+                rightPaddle.vy = 0;
             }
-            if(e.KeyCode == Keys.Down)
+            else if(e.KeyCode == Keys.Down)
             {
-                vy = 0;
+                rightPaddle.vy = 0;
+            }
+            if(e.KeyCode ==Keys.W)
+            {
+                leftPaddle.vy = 0;
+            }
+            else if(e.KeyCode == Keys.S)
+            {
+                leftPaddle.vy = 0;
             }
         }
 
@@ -56,13 +62,22 @@ namespace pong
         {
             if (e.KeyCode == Keys.Up)
             {
-                vy = -2;
+                rightPaddle.vy = -2;
             }
             else if (e.KeyCode == Keys.Down)
             {
-                vy = 2;
+                rightPaddle.vy = 2;
+            }
+            if (e.KeyCode == Keys.W)
+            {
+                leftPaddle.vy = -2;
+            }
+            else if (e.KeyCode == Keys.S)
+            {
+                leftPaddle.vy = 2;
             }
         }
+    
         
 
         private void Canvas_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -70,6 +85,9 @@ namespace pong
             Graphics graphics = e.Graphics;
             graphics.Clear(Color.Black);
             ball.Render(graphics);
+            rightPaddle.Render(graphics, ball);
+            leftPaddle.Render(graphics);
+
 
         }
         public void GameLoop()

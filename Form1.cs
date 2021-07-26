@@ -25,6 +25,7 @@ namespace c_sharp_pong
         {
             formWindow = new Canvas();
             formWindow.Text = "Pong Game Screen";
+            formWindow.Size = new Size(717, 800);
             formWindow.Show();
 
         }
