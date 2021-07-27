@@ -86,7 +86,7 @@ namespace pong
             graphics.Clear(Color.Black);
             ball.Render(graphics);
             rightPaddle.Render(graphics, ball);
-            leftPaddle.Render(graphics);
+            leftPaddle.Render(graphics, ball);
 
 
         }

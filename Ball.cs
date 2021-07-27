@@ -23,19 +23,24 @@ namespace c_sharp_pong
          
             if (x > courseW)
             {
-                vx = -2;
+                vy = 0;
+                x = courseW / 2;
+                vx = 2;
+                
             }
             else if (x < 0)
             {
-                vx = 2;
+                vy = 0;
+                vx = -2;
+                x = courseW / 2;
             }
             if( y > courseH)
             {
-                vy = -2;
+                vy = -vy;
             }
             else if( y < 0)
             {
-                vy = 2;
+                vy = -vy;
             }
         }
 
