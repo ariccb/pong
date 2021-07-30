@@ -20,7 +20,8 @@ namespace pong
         private RightPaddle rightPaddle;
         public float courseWidth;
         public float courseHeight;
-
+        public int leftScore = 0;
+        public int rightScore = 0;
 
         public Game(Canvas canvas)
         {
@@ -36,6 +37,7 @@ namespace pong
             gameLoopThread.Start();
             canvas.KeyDown += Canvas_KeyPress;
             canvas.KeyUp += Canvas_KeyRelease;
+            ball.Goal += Score; // this is declaring a listener (ball.Goal) after += is the function that is called when the listener is activated.
             }
 
         private void Canvas_KeyRelease(object sender, KeyEventArgs e)
@@ -48,11 +50,11 @@ namespace pong
             {
                 rightPaddle.vy = 0;
             }
-            if(e.KeyCode ==Keys.W)
+            if(e.KeyCode ==Keys.W || leftPaddle.y < 0)
             {
                 leftPaddle.vy = 0;
             }
-            else if(e.KeyCode == Keys.S)
+            else if(e.KeyCode == Keys.S ||leftPaddle.y > courseHeight - leftPaddle.paddleHeight)
             {
                 leftPaddle.vy = 0;
             }
@@ -68,7 +70,7 @@ namespace pong
             {
                 rightPaddle.vy = 2;
             }
-            if (e.KeyCode == Keys.W)
+            if (e.KeyCode == Keys.W && leftPaddle.y > 0)
             {
                 leftPaddle.vy = -2;
             }
@@ -76,6 +78,7 @@ namespace pong
             {
                 leftPaddle.vy = 2;
             }
+            
         }
     
         
@@ -83,13 +86,45 @@ namespace pong
         private void Canvas_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;
+            Font scoreFont = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Font bigscoreFont = new System.Drawing.Font("Consolas", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             graphics.Clear(Color.Black);
-            ball.Render(graphics);
-            rightPaddle.Render(graphics, ball);
+            ball.Render(graphics, rightPaddle, leftPaddle);
+            rightPaddle.Render(graphics, ball, leftPaddle);
             leftPaddle.Render(graphics, ball);
-
+            graphics.DrawString("Score", scoreFont, new SolidBrush(Color.White), new PointF(courseWidth/2, courseHeight + 20));
+            graphics.DrawString(leftScore.ToString(), scoreFont, new SolidBrush(Color.White), new PointF((courseWidth / 2) - 50, courseHeight + 40));
+            graphics.DrawString(rightScore.ToString(), scoreFont, new SolidBrush(Color.White), new PointF((courseWidth / 2) + 75, courseHeight + 40));
+            graphics.FillRectangle(new SolidBrush(Color.White), 0, courseHeight, courseWidth, 10);
+            if (leftScore >= 5)
+            {
+                ball.vx = 0;
+                ball.vy = 0;
+                graphics.DrawString("Player Wins!", bigscoreFont, new SolidBrush(Color.White), new PointF(((courseWidth / 2) - 200), (courseHeight / 2)));
+            }
+            else if (rightScore >= 5)
+            {
+                ball.vx = 0;
+                ball.vy = 0;
+                graphics.DrawString("Computer Wins!", bigscoreFont, new SolidBrush(Color.White), new PointF(((courseWidth / 2) - 200), (courseHeight / 2)));
+            }
 
         }
+
+        public void Score(object sender, GoalEventArgs e)
+        {
+            if (e.scorer == "Left")
+            {
+                leftScore++; //same as saying leftScore + 1;
+            }
+            else if(e.scorer == "Right")
+            {
+                rightScore++;
+            }
+            
+        }
+
+
         public void GameLoop()
         {
             while (gameLoopThread.IsAlive&&!canvasClosed) // the && checks for a logical condition  - if canvasClosed is NOT closed
