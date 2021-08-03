@@ -29,25 +29,25 @@ namespace c_sharp_pong
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.start_game = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // start_game
             // 
-            this.button1.Location = new System.Drawing.Point(337, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.start_game.Location = new System.Drawing.Point(337, 257);
+            this.start_game.Name = "start_game";
+            this.start_game.Size = new System.Drawing.Size(75, 23);
+            this.start_game.TabIndex = 0;
+            this.start_game.Text = "Start Game";
+            this.start_game.UseVisualStyleBackColor = true;
+            this.start_game.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.start_game);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -56,7 +56,7 @@ namespace c_sharp_pong
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button start_game;
     }
 }
 

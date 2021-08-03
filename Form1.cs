@@ -13,7 +13,7 @@ namespace c_sharp_pong
 {
     public partial class Form1 : Form
     {
-        private Canvas window;
+        private Canvas formWindow;
 
         public Form1()
         {
@@ -23,9 +23,10 @@ namespace c_sharp_pong
         private void button1_Click(object sender, EventArgs e) // the sender is the button itself in this case
                                                                // e is the event argument
         {
-            window = new Canvas();
-            window.Text = "Pong Game Screen";
-            window.Show();
+            formWindow = new Canvas();
+            formWindow.Text = "Pong Game Screen";
+            formWindow.Size = new Size(717, 800);
+            formWindow.Show();
 
         }
     }
