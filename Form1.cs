@@ -29,5 +29,10 @@ namespace c_sharp_pong
             formWindow.Show();
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

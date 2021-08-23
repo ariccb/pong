@@ -50,6 +50,7 @@ namespace c_sharp_pong
             this.Controls.Add(this.start_game);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
