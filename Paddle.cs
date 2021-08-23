@@ -176,7 +176,7 @@ namespace c_sharp_pong
         {
             if (ball.x < courseW / 3 && ball.y < courseH / 3 && ball.vx > 0 && ball.vy < -3 && ball.y < y && y > 0)
             {
-                vy = ;
+                vy = 3;
             }
             else if (ball.x < courseW / 3 && ball.y > courseH - (courseH / 3) && ball.vx > 0 && ball.vy > 3 && ball.y > y && y > 0)
             {

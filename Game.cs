@@ -1,5 +1,5 @@
 ﻿using c_sharp_pong;
-using spaceinvaders;
+using pong;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,7 +8,7 @@ using System.Threading;
 using System.Windows.Forms;
 
 
-namespace spaceinvaders
+namespace pong
 {
     class Game
     {
